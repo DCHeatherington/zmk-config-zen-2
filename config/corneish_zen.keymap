@@ -45,12 +45,12 @@
                 raise_layer {
                         label = "SYMBOL";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  kpnumSEVEN  |  kpnumEIGHT  |  kpnumNINE  |  )  | tg 2 |
-// | CTRL |     |     |     |     |     |   |  plus |  kpnum4  |  kpnum5  |  kpnum6  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  kpnum1 |  kpnum2  |  kpnum3  | "|" |  ~   |
+// |  esc |     |     |     |     |     |   |  ^  |  kpnumSEVEN  |  kpnumEIGHT  |  kpnumNINE  |  )  | tg 2 |
+// | CTRL |     |     |     |     |     |   |  npPlus |  kpnum4  |  kpnum5  |  kpnum6  |  \  |  `   |
+// | SHFT |     |     |     |     |     |   |  npMINUS|  kpnum1 |  kpnum2  |  kpnum3  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp  TAB  &trans   &trans &trans   &trans   &trans     &kp KP_N0    &kp KP_N7  &kp KP_N8 &kp KP_N9 &kp RPAR &tog 2
+   &kp  ESC  &trans   &trans &trans   &trans   &trans     &kp KP_N0    &kp KP_N7  &kp KP_N8 &kp KP_N9 &kp RPAR &tog 2
    &kp LCTRL &trans   &trans &trans   &trans   &trans     &kp KP_PLUS  &kp KP_N4  &kp KP_N5 &kp KP_N6 &kp BSLH &kp GRAVE
    &kp LSHFT &trans   &trans &trans   &trans   &trans     &kp KP_MINUS &kp KP_N1  &kp KP_N2 &kp KP_N3 &kp PIPE &kp TILDE
                     	     &kp LGUI &trans   &kp SPACE    &kp RET   &trans    &kp RALT
