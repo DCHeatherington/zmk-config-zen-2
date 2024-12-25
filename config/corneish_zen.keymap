@@ -38,22 +38,22 @@
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp HOME   &kp UP &kp END   &kp N0 &kp BSPC
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans   &kp LEFT &kp DOWN &kp RIGHT &trans &trans
    &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                          	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+                          	            &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
 
                 raise_layer {
                         label = "SYMBOL";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | tg 2 |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  kpnumSEVEN  |  kpnumEIGHT  |  kpnumNINE  |  )  | tg 2 |
+// | CTRL |     |     |     |     |     |   |  plus |  kpnum4  |  kpnum5  |  kpnum6  |  \  |  `   |
+// | SHFT |     |     |     |     |     |   |  _  |  kpnum1 |  kpnum2  |  kpnum3  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp STAR &kp LPAR &kp RPAR &tog 2
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp NUMBER_6 &kp LBKT &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC &kp RBRC &kp PIPE &kp TILDE
-                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+   &kp  TAB  &trans   &trans &trans   &trans   &trans     &kp KP_N0    &kp KP_N7  &kp KP_N8 &kp KP_N9 &kp RPAR &tog 2
+   &kp LCTRL &trans   &trans &trans   &trans   &trans     &kp KP_PLUS  &kp KP_N4  &kp KP_N5 &kp KP_N6 &kp BSLH &kp GRAVE
+   &kp LSHFT &trans   &trans &trans   &trans   &trans     &kp KP_MINUS &kp KP_N1  &kp KP_N2 &kp KP_N3 &kp PIPE &kp TILDE
+                    	     &kp LGUI &trans   &kp SPACE    &kp RET   &trans    &kp RALT
                         >;
                 };
         };
