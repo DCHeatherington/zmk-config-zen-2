@@ -45,13 +45,13 @@
                 raise_layer {
                         label = "SYMBOL";
 // -----------------------------------------------------------------------------------------
-// |  esc |     |     |     |     |     |   |  ^  |  kpnumSEVEN  |  kpnumEIGHT  |  kpnumNINE  |  )  | tg 2 |
-// | CTRL |     |     |     |     |     |   |  npPlus |  kpnum4  |  kpnum5  |  kpnum6  |  \  |  `   |
+// |  esc |  1  |  2  |  3  |  4  |  5  |   |  ^  |  kpnumSEVEN  |  kpnumEIGHT  |  kpnumNINE  |  )  | ` |
+// | CTRL |     |     |     |     |     |   |  npPlus |  kpnum4  |  kpnum5  |  kpnum6  |  \  |   tg 2  |
 // | SHFT |     |     |     |     |     |   |  npMINUS|  kpnum1 |  kpnum2  |  kpnum3  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp  ESC  &trans   &trans &trans   &trans   &trans     &kp KP_N0    &kp KP_N7  &kp KP_N8 &kp KP_N9 &kp RPAR &tog 2
-   &kp LCTRL &trans   &trans &trans   &trans   &trans     &kp KP_PLUS  &kp KP_N4  &kp KP_N5 &kp KP_N6 &kp BSLH &kp GRAVE
+   &kp  ESC &kp N1    &kp N2 &kp N3   &kp N4   &kp N5     &kp KP_N0    &kp KP_N7  &kp KP_N8 &kp KP_N9 &kp RPAR &kp GRAVE
+   &kp LCTRL &trans   &trans &trans   &trans   &trans     &kp KP_PLUS  &kp KP_N4  &kp KP_N5 &kp KP_N6 &kp BSLH &tog 2
    &kp LSHFT &trans   &trans &trans   &trans   &trans     &kp KP_MINUS &kp KP_N1  &kp KP_N2 &kp KP_N3 &kp PIPE &kp TILDE
                     	     &kp LGUI &trans   &kp SPACE    &kp RET   &trans    &kp RALT
                         >;
